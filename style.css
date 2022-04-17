@@ -1,0 +1,15 @@
+#lists{
+    text-align: center;
+}
+
+.mdc-data-table{
+    width: 90%;
+}
+
+#texts{
+    text-align: center;
+}
+
+#texts div{
+    min-width: 90%;
+}

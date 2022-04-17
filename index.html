@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View-url-property</title>
+
+    <link rel="stylesheet" href="./material.indigo-pink.min.css">
+    <script defer src="./material.min.js"></script>
+
+    <link href="./material-components-web.min.css" rel="stylesheet">
+    <script src="./material-components-web.min.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+<body>
+
+
+
+<!-- Textfield with Floating Label -->
+<div id="texts">
+    <form action="#">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="url_area" oninput="inputChange()">
+        <label class="mdl-textfield__label" for="url_area">URL...</label>
+    </div>
+    </form>
+</div>
+
+<div id="lists">
+    <div class="mdc-data-table">
+        <div class="mdc-data-table__table-container">
+        <table class="mdc-data-table__table" aria-label="Dessert calories">
+            <thead>
+                <!--タイトル-->
+            <tr class="mdc-data-table__header-row">
+                <th class="mdc-data-table__header-cell mdc-data-table__header-cell--checkbox" role="columnheader" scope="col">
+                <div class="mdc-checkbox mdc-data-table__header-row-checkbox mdc-checkbox--selected">
+                    <input type="checkbox" class="mdc-checkbox__native-control" aria-label="Toggle all rows" id="check_top">
+                    <div class="mdc-checkbox__background">
+                    <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                        <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                    </svg>
+                    <div class="mdc-checkbox__mixedmark"></div>
+                    </div>
+                    <div class="mdc-checkbox__ripple"></div>
+                </div>
+                </th>
+
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col">パラメータ</th>
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col">値</th>
+
+                </tr>
+            </thead>
+            <tbody class="mdc-data-table__content" id="parameters_list">
+                <!--コンテンツ-->
+            </tbody>
+        </table>
+        </div>
+    </div>
+</div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
