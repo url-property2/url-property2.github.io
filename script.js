@@ -4,6 +4,7 @@ function inputChange(){
     var url_area = document.getElementById('url_area').value;
     var url = new URL(url_area);
     var params = new URLSearchParams(url.search);
+    params.sort();
     
     var check_count = 1;
     for(let param of params){
